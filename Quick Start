@@ -1,0 +1,8 @@
+# Training
+python yoloe_unified/train.py --config yoloe_unified/config/default.yaml
+
+# Inference
+python yoloe_unified/infer.py --weights yoloe_unified_l.pt --source data/sample.jpg
+
+# Export to TensorRT
+python yoloe_unified/export.py --weights yoloe_unified_l.pt --format engine --device 0
